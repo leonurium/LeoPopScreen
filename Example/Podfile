@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LeoPopScreen_Example' do
+  pod 'LeoPopScreen', :path => '../'
+
+  target 'LeoPopScreen_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
