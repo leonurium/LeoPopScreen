@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A165BBFC419379676E81741DCD44B30 /* LeoPopScreen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02ED4CB9C43860D6DADE813348324A67 /* LeoPopScreen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CD42B70FEE97E33182A819C64D75F2C /* Pods-LeoPopScreen_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A1FE70D32CB6BA8CFC14D5F899BD7 /* Pods-LeoPopScreen_Tests-dummy.m */; };
+		3D34DF521107CDDD83CC643BBAF10119 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		780018DD187F95ACC5F5511FD6B70B64 /* Pods-LeoPopScreen_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA75B1ABBFB58F4BE3C35DB138C7C659 /* Pods-LeoPopScreen_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86B190BF876C76AC4485010EF4737FED /* Pods-LeoPopScreen_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA7589EBFF413BE12BD55B803A094E3A /* Pods-LeoPopScreen_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A58EA44912D6EF53F3F72B7E5C8D6E8 /* Pods-LeoPopScreen_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D229D4A6BDA3C1C1D3A9006D9302DE19 /* Pods-LeoPopScreen_Example-dummy.m */; };
+		AA794792255A19D70052D937 /* LeoPopScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA794791255A19D70052D937 /* LeoPopScreen.swift */; };
+		AA794797255A20B60052D937 /* LeoPopScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA794796255A20B60052D937 /* LeoPopScreen.xib */; };
+		B7FAAB6D903F9D00020A79A52073E5DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CBA38A1F80A03055A5E2DFB7AF864FDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E13468CBFEDE483F3E1E0F9B7E918C7D /* LeoPopScreen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F87B253747E930A50AB8884D3D70C6 /* LeoPopScreen-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DFBB7020CC246E8F71D1AC3D5B89724 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B02F3E95F5118A82859DD90108926FE9;
+			remoteInfo = "Pods-LeoPopScreen_Example";
+		};
+		D2BA2D525BFF60B960258498389CCB23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 451443409F1118CECC15C522EDEDD7F5;
+			remoteInfo = LeoPopScreen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00ED10264433C0D2DF78353B34CC97E8 /* Pods-LeoPopScreen_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoPopScreen_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		02ED4CB9C43860D6DADE813348324A67 /* LeoPopScreen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeoPopScreen-umbrella.h"; sourceTree = "<group>"; };
+		02FCFA55687D26129C63B06952AB7259 /* LeoPopScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeoPopScreen.release.xcconfig; sourceTree = "<group>"; };
+		05AF6FD6BFA38DD7658B0ECD9BBB11F0 /* Pods-LeoPopScreen_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeoPopScreen_Tests.modulemap"; sourceTree = "<group>"; };
+		06873C2E9AB4F815B2B895DA783B3984 /* Pods_LeoPopScreen_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeoPopScreen_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E37962498CA025C3D779FE4E9149F66 /* LeoPopScreen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LeoPopScreen.modulemap; sourceTree = "<group>"; };
+		13AC4A4B239732B604F2BE417634A6EC /* Pods-LeoPopScreen_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoPopScreen_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2514DF4AEDA8B00BD2A1D3DB5712D37E /* Pods-LeoPopScreen_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoPopScreen_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4226B0D27DAE011664C696AA70A93519 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		44F02F854F70BC8946B9131F38496926 /* Pods-LeoPopScreen_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeoPopScreen_Example.modulemap"; sourceTree = "<group>"; };
+		465DA8A4083AD78D570D4682DBA6E9DD /* Pods-LeoPopScreen_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoPopScreen_Example-Info.plist"; sourceTree = "<group>"; };
+		611A1FE70D32CB6BA8CFC14D5F899BD7 /* Pods-LeoPopScreen_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeoPopScreen_Tests-dummy.m"; sourceTree = "<group>"; };
+		61F87B253747E930A50AB8884D3D70C6 /* LeoPopScreen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeoPopScreen-dummy.m"; sourceTree = "<group>"; };
+		63D7B6D6BEA862DFA0A2283A3CDF1C45 /* LeoPopScreen-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LeoPopScreen-Info.plist"; sourceTree = "<group>"; };
+		6506D923CD5FCB4E1C3ABBDE92657355 /* Pods-LeoPopScreen_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoPopScreen_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6F9EE32726534F85DA945FDA72487E63 /* Pods-LeoPopScreen_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoPopScreen_Tests-Info.plist"; sourceTree = "<group>"; };
+		920617A431236346297E66342586A7AE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		92407A01DD6B841FCBF44E0FEFF31CE4 /* Pods-LeoPopScreen_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoPopScreen_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		98A6377F506C2435DA1A12DD47CCDA31 /* Pods-LeoPopScreen_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeoPopScreen_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA794791255A19D70052D937 /* LeoPopScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeoPopScreen.swift; path = LeoPopScreen/Classes/LeoPopScreen.swift; sourceTree = "<group>"; };
+		AA794796255A20B60052D937 /* LeoPopScreen.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LeoPopScreen.xib; path = LeoPopScreen/Classes/LeoPopScreen.xib; sourceTree = "<group>"; };
+		AAF16F781ED0766F61B8E9045C7A51EC /* Pods-LeoPopScreen_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoPopScreen_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1D5AC031A281BC8671465B36D5A8970 /* Pods-LeoPopScreen_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeoPopScreen_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6A5A7D68F4746FF3C7E2C55F2364124 /* Pods_LeoPopScreen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeoPopScreen_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA7589EBFF413BE12BD55B803A094E3A /* Pods-LeoPopScreen_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeoPopScreen_Example-umbrella.h"; sourceTree = "<group>"; };
+		CD8032031F2D1AA109F1A3C7166B5B2D /* LeoPopScreen-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeoPopScreen-prefix.pch"; sourceTree = "<group>"; };
+		D229D4A6BDA3C1C1D3A9006D9302DE19 /* Pods-LeoPopScreen_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeoPopScreen_Example-dummy.m"; sourceTree = "<group>"; };
+		E56D879455A33B4063F8037A74C1DDA3 /* Pods-LeoPopScreen_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoPopScreen_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E809C4B0BB3D82DC26BFB5295B14CED7 /* LeoPopScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeoPopScreen.debug.xcconfig; sourceTree = "<group>"; };
+		EB0C007EC984EB8B7847E5BD904FA6C1 /* LeoPopScreen.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LeoPopScreen.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		EED940311BD1948A1617B7549E28EF1B /* LeoPopScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeoPopScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA75B1ABBFB58F4BE3C35DB138C7C659 /* Pods-LeoPopScreen_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeoPopScreen_Tests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41179E87A0833251DF7708767565357C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA38A1F80A03055A5E2DFB7AF864FDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC6720164B109751081FA99436C2D77F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FAAB6D903F9D00020A79A52073E5DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C0BCC51B8A5C65828BD9489B0886D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D34DF521107CDDD83CC643BBAF10119 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3248C44643FB1E94165931225898C15B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39A696A7ECA9F4817070D1FB3F5449F9 /* LeoPopScreen */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		35F6DC517039EDB894ABA20805475AAE /* Pods-LeoPopScreen_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				05AF6FD6BFA38DD7658B0ECD9BBB11F0 /* Pods-LeoPopScreen_Tests.modulemap */,
+				98A6377F506C2435DA1A12DD47CCDA31 /* Pods-LeoPopScreen_Tests-acknowledgements.markdown */,
+				92407A01DD6B841FCBF44E0FEFF31CE4 /* Pods-LeoPopScreen_Tests-acknowledgements.plist */,
+				611A1FE70D32CB6BA8CFC14D5F899BD7 /* Pods-LeoPopScreen_Tests-dummy.m */,
+				6F9EE32726534F85DA945FDA72487E63 /* Pods-LeoPopScreen_Tests-Info.plist */,
+				FA75B1ABBFB58F4BE3C35DB138C7C659 /* Pods-LeoPopScreen_Tests-umbrella.h */,
+				AAF16F781ED0766F61B8E9045C7A51EC /* Pods-LeoPopScreen_Tests.debug.xcconfig */,
+				00ED10264433C0D2DF78353B34CC97E8 /* Pods-LeoPopScreen_Tests.release.xcconfig */,
+			);
+			name = "Pods-LeoPopScreen_Tests";
+			path = "Target Support Files/Pods-LeoPopScreen_Tests";
+			sourceTree = "<group>";
+		};
+		39A696A7ECA9F4817070D1FB3F5449F9 /* LeoPopScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6D290A5C4C7E15F6193A1988D8327B08 /* Pod */,
+				97F01485C5F3069ABC72E0891A4273A4 /* Support Files */,
+				AA794791255A19D70052D937 /* LeoPopScreen.swift */,
+				AA794796255A20B60052D937 /* LeoPopScreen.xib */,
+			);
+			name = LeoPopScreen;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		629C9DE6B70A97428FFDB24E0436EE32 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0D7802BE9CF72A3A5A155AABCACC212 /* Pods-LeoPopScreen_Example */,
+				35F6DC517039EDB894ABA20805475AAE /* Pods-LeoPopScreen_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6D290A5C4C7E15F6193A1988D8327B08 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				EB0C007EC984EB8B7847E5BD904FA6C1 /* LeoPopScreen.podspec */,
+				920617A431236346297E66342586A7AE /* LICENSE */,
+				4226B0D27DAE011664C696AA70A93519 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		97F01485C5F3069ABC72E0891A4273A4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E37962498CA025C3D779FE4E9149F66 /* LeoPopScreen.modulemap */,
+				61F87B253747E930A50AB8884D3D70C6 /* LeoPopScreen-dummy.m */,
+				63D7B6D6BEA862DFA0A2283A3CDF1C45 /* LeoPopScreen-Info.plist */,
+				CD8032031F2D1AA109F1A3C7166B5B2D /* LeoPopScreen-prefix.pch */,
+				02ED4CB9C43860D6DADE813348324A67 /* LeoPopScreen-umbrella.h */,
+				E809C4B0BB3D82DC26BFB5295B14CED7 /* LeoPopScreen.debug.xcconfig */,
+				02FCFA55687D26129C63B06952AB7259 /* LeoPopScreen.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LeoPopScreen";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				3248C44643FB1E94165931225898C15B /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F6E07158C5565B91492AF78BC29B474E /* Products */,
+				629C9DE6B70A97428FFDB24E0436EE32 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0D7802BE9CF72A3A5A155AABCACC212 /* Pods-LeoPopScreen_Example */ = {
+			isa = PBXGroup;
+			children = (
+				44F02F854F70BC8946B9131F38496926 /* Pods-LeoPopScreen_Example.modulemap */,
+				B1D5AC031A281BC8671465B36D5A8970 /* Pods-LeoPopScreen_Example-acknowledgements.markdown */,
+				2514DF4AEDA8B00BD2A1D3DB5712D37E /* Pods-LeoPopScreen_Example-acknowledgements.plist */,
+				D229D4A6BDA3C1C1D3A9006D9302DE19 /* Pods-LeoPopScreen_Example-dummy.m */,
+				6506D923CD5FCB4E1C3ABBDE92657355 /* Pods-LeoPopScreen_Example-frameworks.sh */,
+				465DA8A4083AD78D570D4682DBA6E9DD /* Pods-LeoPopScreen_Example-Info.plist */,
+				CA7589EBFF413BE12BD55B803A094E3A /* Pods-LeoPopScreen_Example-umbrella.h */,
+				E56D879455A33B4063F8037A74C1DDA3 /* Pods-LeoPopScreen_Example.debug.xcconfig */,
+				13AC4A4B239732B604F2BE417634A6EC /* Pods-LeoPopScreen_Example.release.xcconfig */,
+			);
+			name = "Pods-LeoPopScreen_Example";
+			path = "Target Support Files/Pods-LeoPopScreen_Example";
+			sourceTree = "<group>";
+		};
+		F6E07158C5565B91492AF78BC29B474E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED940311BD1948A1617B7549E28EF1B /* LeoPopScreen.framework */,
+				06873C2E9AB4F815B2B895DA783B3984 /* Pods_LeoPopScreen_Example.framework */,
+				B6A5A7D68F4746FF3C7E2C55F2364124 /* Pods_LeoPopScreen_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4ED08591E4231F2D78EA4C9E8E654CD8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86B190BF876C76AC4485010EF4737FED /* Pods-LeoPopScreen_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82DCF42E1990B18A6608CDD7E22A2513 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A165BBFC419379676E81741DCD44B30 /* LeoPopScreen-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF6648199A284FC8AE01772229FC4676 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780018DD187F95ACC5F5511FD6B70B64 /* Pods-LeoPopScreen_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14A296E585CCB274610FBEE861DFEE2C /* Pods-LeoPopScreen_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E293624331CF76156096ED3ABA90DAE /* Build configuration list for PBXNativeTarget "Pods-LeoPopScreen_Tests" */;
+			buildPhases = (
+				DF6648199A284FC8AE01772229FC4676 /* Headers */,
+				BC6E631E60840E7049A7D6B713FD3FB5 /* Sources */,
+				F3C0BCC51B8A5C65828BD9489B0886D6 /* Frameworks */,
+				EF0508B3AF867F6548766064840DDEAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F481E415A868FA50D1F952F514BBA46C /* PBXTargetDependency */,
+			);
+			name = "Pods-LeoPopScreen_Tests";
+			productName = "Pods-LeoPopScreen_Tests";
+			productReference = B6A5A7D68F4746FF3C7E2C55F2364124 /* Pods_LeoPopScreen_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		451443409F1118CECC15C522EDEDD7F5 /* LeoPopScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ABAEAE50BEE57334AB9EC1B34B224B3 /* Build configuration list for PBXNativeTarget "LeoPopScreen" */;
+			buildPhases = (
+				82DCF42E1990B18A6608CDD7E22A2513 /* Headers */,
+				C52867479BB0D304D908C2CB9A63ED38 /* Sources */,
+				41179E87A0833251DF7708767565357C /* Frameworks */,
+				A77480BF24DFEAB47F36007014DBE6A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeoPopScreen;
+			productName = LeoPopScreen;
+			productReference = EED940311BD1948A1617B7549E28EF1B /* LeoPopScreen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B02F3E95F5118A82859DD90108926FE9 /* Pods-LeoPopScreen_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED9041E1EB440D718CE5453C4123B12 /* Build configuration list for PBXNativeTarget "Pods-LeoPopScreen_Example" */;
+			buildPhases = (
+				4ED08591E4231F2D78EA4C9E8E654CD8 /* Headers */,
+				1DB26C3E1ABB3FEA9B1A94E21490C8F3 /* Sources */,
+				DC6720164B109751081FA99436C2D77F /* Frameworks */,
+				E59F2E8DBB2BE7BA07B30F5107677E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F0CDBA0ECC0789656FEE181B5355530 /* PBXTargetDependency */,
+			);
+			name = "Pods-LeoPopScreen_Example";
+			productName = "Pods-LeoPopScreen_Example";
+			productReference = 06873C2E9AB4F815B2B895DA783B3984 /* Pods_LeoPopScreen_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					451443409F1118CECC15C522EDEDD7F5 = {
+						LastSwiftMigration = 1200;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F6E07158C5565B91492AF78BC29B474E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				451443409F1118CECC15C522EDEDD7F5 /* LeoPopScreen */,
+				B02F3E95F5118A82859DD90108926FE9 /* Pods-LeoPopScreen_Example */,
+				14A296E585CCB274610FBEE861DFEE2C /* Pods-LeoPopScreen_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A77480BF24DFEAB47F36007014DBE6A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA794797255A20B60052D937 /* LeoPopScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E59F2E8DBB2BE7BA07B30F5107677E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0508B3AF867F6548766064840DDEAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DB26C3E1ABB3FEA9B1A94E21490C8F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A58EA44912D6EF53F3F72B7E5C8D6E8 /* Pods-LeoPopScreen_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6E631E60840E7049A7D6B713FD3FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD42B70FEE97E33182A819C64D75F2C /* Pods-LeoPopScreen_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52867479BB0D304D908C2CB9A63ED38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA794792255A19D70052D937 /* LeoPopScreen.swift in Sources */,
+				E13468CBFEDE483F3E1E0F9B7E918C7D /* LeoPopScreen-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F0CDBA0ECC0789656FEE181B5355530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeoPopScreen;
+			target = 451443409F1118CECC15C522EDEDD7F5 /* LeoPopScreen */;
+			targetProxy = D2BA2D525BFF60B960258498389CCB23 /* PBXContainerItemProxy */;
+		};
+		F481E415A868FA50D1F952F514BBA46C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LeoPopScreen_Example";
+			target = B02F3E95F5118A82859DD90108926FE9 /* Pods-LeoPopScreen_Example */;
+			targetProxy = 8DFBB7020CC246E8F71D1AC3D5B89724 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9301181800B2A81C3CFEF66FF3C9457B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E56D879455A33B4063F8037A74C1DDA3 /* Pods-LeoPopScreen_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoPopScreen_Example/Pods-LeoPopScreen_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoPopScreen_Example/Pods-LeoPopScreen_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B1F0A16D72812CBA3E2286C30A25B1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E809C4B0BB3D82DC26BFB5295B14CED7 /* LeoPopScreen.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LeoPopScreen/LeoPopScreen-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeoPopScreen/LeoPopScreen-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeoPopScreen/LeoPopScreen.modulemap";
+				PRODUCT_MODULE_NAME = LeoPopScreen;
+				PRODUCT_NAME = LeoPopScreen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B8CDFFF914020D1EC69A93BCD4F5D84E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FCFA55687D26129C63B06952AB7259 /* LeoPopScreen.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LeoPopScreen/LeoPopScreen-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeoPopScreen/LeoPopScreen-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeoPopScreen/LeoPopScreen.modulemap";
+				PRODUCT_MODULE_NAME = LeoPopScreen;
+				PRODUCT_NAME = LeoPopScreen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2B55731CB33D5ACB60D72D0E0EBD034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF16F781ED0766F61B8E9045C7A51EC /* Pods-LeoPopScreen_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoPopScreen_Tests/Pods-LeoPopScreen_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoPopScreen_Tests/Pods-LeoPopScreen_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7C8F80421CF075AF8777B9C41C5BE9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00ED10264433C0D2DF78353B34CC97E8 /* Pods-LeoPopScreen_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoPopScreen_Tests/Pods-LeoPopScreen_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoPopScreen_Tests/Pods-LeoPopScreen_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E7DFC33EC34664F21C7690082EC5AFAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13AC4A4B239732B604F2BE417634A6EC /* Pods-LeoPopScreen_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoPopScreen_Example/Pods-LeoPopScreen_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoPopScreen_Example/Pods-LeoPopScreen_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ABAEAE50BEE57334AB9EC1B34B224B3 /* Build configuration list for PBXNativeTarget "LeoPopScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1F0A16D72812CBA3E2286C30A25B1C5 /* Debug */,
+				B8CDFFF914020D1EC69A93BCD4F5D84E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E293624331CF76156096ED3ABA90DAE /* Build configuration list for PBXNativeTarget "Pods-LeoPopScreen_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B55731CB33D5ACB60D72D0E0EBD034 /* Debug */,
+				D7C8F80421CF075AF8777B9C41C5BE9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED9041E1EB440D718CE5453C4123B12 /* Build configuration list for PBXNativeTarget "Pods-LeoPopScreen_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9301181800B2A81C3CFEF66FF3C9457B /* Debug */,
+				E7DFC33EC34664F21C7690082EC5AFAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

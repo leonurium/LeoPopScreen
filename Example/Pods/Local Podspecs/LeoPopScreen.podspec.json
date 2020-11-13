@@ -1,0 +1,22 @@
+{
+  "name": "LeoPopScreen",
+  "version": "0.1.0",
+  "summary": "A short description of LeoPopScreen.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ranggaleoo/LeoPopScreen",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ranggaleoo": "leorangga30@ymail.com"
+  },
+  "source": {
+    "git": "https://github.com/ranggaleoo/LeoPopScreen.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LeoPopScreen/Classes/**/*"
+}

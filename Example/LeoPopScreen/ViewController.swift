@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LeoPopScreen
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,48 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func show(_ sender: UIButton) {
+        let popScreen = LeoPopScreen(on: self, delegate: self, dataSource: self)
+//        popScreen.delegate = self
+//        popScreen.dataSource = self
+//        popScreen.show(on: self)
+    }
+}
 
+extension ViewController: LeoPopScreenDelegate {
+    func didTapPrimaryButton(view: LeoPopScreen) {
+        
+    }
+    
+    func didTapSecondaryButton(view: LeoPopScreen) {
+        
+    }
+}
+
+extension ViewController: LeoPopScreenDataSource {
+    var image: UIImage? {
+        return UIImage(named: "")
+    }
+    
+    var titleText: String {
+        return "Title Text"
+    }
+    
+    var bodyText: String {
+        return "Body Text"
+    }
+    
+    var buttonPrimaryText: String {
+        return "Button Primary Text"
+    }
+    
+    var buttonSecondaryText: String {
+        return "Button Secondary Text"
+    }
+    
+    var presentationStyle: UIModalPresentationStyle {
+        return .fullScreen
+    }
 }
 

@@ -1,0 +1,16 @@
+PODS:
+  - LeoPopScreen (0.1.0)
+
+DEPENDENCIES:
+  - LeoPopScreen (from `../`)
+
+EXTERNAL SOURCES:
+  LeoPopScreen:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LeoPopScreen: 2fce394514ea4234e02d9cc49e28cec584cc6299
+
+PODFILE CHECKSUM: c094f7aa82c88ba2b5a36bbb0f7ff16fcdaa9214
+
+COCOAPODS: 1.9.1
