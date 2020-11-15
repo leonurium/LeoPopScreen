@@ -22,7 +22,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func show(_ sender: UIButton) {
-        let popScreen = LeoPopScreen(on: self, delegate: self, dataSource: self)
+//        let popScreen = LeoPopScreen(configuration: .init(type: .forceUpdateApp), on: self, delegate: self)
+        let popScreen = LeoPopScreen(configuration: .init(type: .batteryLevelWarning))
+        popScreen.dataSource = self
+        popScreen.delegate = self
+        popScreen.show(on: self)
+//        LeoPopScreen(on: self, delegate: self, dataSource: self)
+//        let popScreen = LeoPopScreen()
 //        popScreen.delegate = self
 //        popScreen.dataSource = self
 //        popScreen.show(on: self)
@@ -31,32 +37,32 @@ class ViewController: UIViewController {
 
 extension ViewController: LeoPopScreenDelegate {
     func didTapPrimaryButton(view: LeoPopScreen) {
-        
+        view.dismiss(animated: true, completion: nil)
     }
     
     func didTapSecondaryButton(view: LeoPopScreen) {
-        
+        view.dismiss(animated: true, completion: nil)
     }
 }
 
 extension ViewController: LeoPopScreenDataSource {
     var image: UIImage? {
-        return UIImage(named: "")
+        return UIImage(named: "image_update")
     }
     
-    var titleText: String {
-        return "Title Text"
+    var titleText: String? {
+        return nil
     }
     
-    var bodyText: String {
-        return "Body Text"
+    var bodyText: String? {
+        return nil
     }
     
-    var buttonPrimaryText: String {
+    var buttonPrimaryText: String? {
         return "Button Primary Text"
     }
     
-    var buttonSecondaryText: String {
+    var buttonSecondaryText: String? {
         return "Button Secondary Text"
     }
     

@@ -14,8 +14,8 @@ public protocol LeoPopScreenDelegate: class {
 
 public protocol LeoPopScreenDataSource: class {
     var image: UIImage? { get }
-    var titleText: String { get }
-    var bodyText: String { get }
+    var titleText: String? { get }
+    var bodyText: String? { get }
     var fontTitle: UIFont { get }
     var fontBody: UIFont { get }
     var titleColor: UIColor { get }
@@ -24,8 +24,8 @@ public protocol LeoPopScreenDataSource: class {
     var buttonSecondaryTextColor: UIColor { get }
     var buttonPrimaryColor: UIColor { get }
     var buttonSecondaryColor: UIColor { get }
-    var buttonPrimaryText: String { get }
-    var buttonSecondaryText: String { get }
+    var buttonPrimaryText: String? { get }
+    var buttonSecondaryText: String? { get }
     var buttonIsRounded: Bool { get }
     var presentationStyle: UIModalPresentationStyle { get }
 }
@@ -79,36 +79,74 @@ public struct LeoPopScreenConfiguration {
     
     public struct Apparance {
         let image: UIImage?
-        let titleText: String
-        let bodyText: String
-        let buttonPrimaryText: String
+        let titleText: String?
+        let bodyText: String?
+        let buttonPrimaryText: String?
+        let buttonSecondaryText: String?
     }
     
     public enum ConfigurationType {
         case custom(apparances: Apparance)
-        case batteryLevel
-        case updateApp
+        case batteryLevelWarning
+        case forceUpdateApp
+        case relaxUpdateApp
     }
     
     private static func getApparance(type: ConfigurationType) -> Apparance {
         switch type {
-        case .batteryLevel:
-             return Apparance(
-                image: UIImage(named: ""),
-                titleText: "batteryLevel",
-                bodyText: "batteryLevel",
-                buttonPrimaryText: "batteryLevel"
-            )
-        case .updateApp:
+        case .batteryLevelWarning:
             return Apparance(
-                image: UIImage(named: "updateApp"),
-                titleText: "updateApp",
-                bodyText: "updateApp",
-                buttonPrimaryText: "updateApp"
+                image: UIImage(identifierName: .image_battery),
+                titleText: "Low Battery",
+                bodyText: "You need to plug the power adapter into the power outlet to continoue",
+                buttonPrimaryText: "OK",
+                buttonSecondaryText: nil
+            )
+        case .forceUpdateApp:
+            return Apparance(
+                image: UIImage(identifierName: .image_update),
+                titleText: "Update Available",
+                bodyText: "To use this app, please download the latest version.",
+                buttonPrimaryText: "Update",
+                buttonSecondaryText: nil
+            )
+        case .relaxUpdateApp:
+            return Apparance(
+                image: UIImage(identifierName: .image_update),
+                titleText: "Update Available",
+                bodyText: "To use this app, please download the latest version.",
+                buttonPrimaryText: "Update",
+                buttonSecondaryText: "Cancel"
             )
             
         case .custom(apparances: let apparance): return apparance
         }
+    }
+}
+
+extension LeoPopScreen: LeoPopScreenDataSource {
+    public var image: UIImage? {
+        return nil
+    }
+    
+    public var titleText: String? {
+        return nil
+    }
+    
+    public var bodyText: String? {
+        return nil
+    }
+    
+    public var buttonPrimaryText: String? {
+        return nil
+    }
+    
+    public var buttonSecondaryText: String? {
+        return nil
+    }
+    
+    public var presentationStyle: UIModalPresentationStyle {
+        return .currentContext
     }
 }
 
@@ -120,7 +158,6 @@ final public class LeoPopScreen: UIViewController {
     @IBOutlet weak private var btn_primary: UIButton!
     @IBOutlet weak private var btn_secondary: UIButton!
     @IBOutlet weak private var constraintHeightImage: NSLayoutConstraint!
-    @IBOutlet weak private var constraintWidthImage: NSLayoutConstraint!
     
     public weak var delegate: LeoPopScreenDelegate?
     public weak var dataSource: LeoPopScreenDataSource?
@@ -139,6 +176,7 @@ final public class LeoPopScreen: UIViewController {
     ) {
         super.init(nibName: String(describing: LeoPopScreen.self), bundle: Bundle(for: LeoPopScreen.self))
         self.delegate = delegate
+        self.dataSource = self
         self.configuration = configuration
         show(on: controller)
     }
@@ -153,12 +191,8 @@ final public class LeoPopScreen: UIViewController {
     }
     
     private func setupViews() {
-        let orientationDevice = UIDevice.current.orientation
-        let constraintScreen = UIScreen.main.bounds.size
-        let size = orientationDevice.isPortrait ? constraintScreen.width : constraintScreen.height
-        
-        constraintHeightImage.constant = size
-        constraintWidthImage.constant = size
+        let width = UIScreen.main.bounds.size.width / 2
+        constraintHeightImage.constant = width
         imageview.image = dataSource?.image
         lbl_title.text = dataSource?.titleText
         lbl_body.text = dataSource?.bodyText
@@ -191,7 +225,17 @@ final public class LeoPopScreen: UIViewController {
             lbl_title.text = config.apparances.titleText
             lbl_body.text = config.apparances.bodyText
             btn_primary.setTitle(config.apparances.buttonPrimaryText, for: .normal)
+            btn_secondary.setTitle(config.apparances.buttonSecondaryText, for: .normal)
         }
+        hideViewIfNeeded()
+    }
+    
+    private func hideViewIfNeeded() {
+        imageview.isHidden = (dataSource?.image == nil && configuration?.apparances.image == nil) ? true : false
+        lbl_title.isHidden = (dataSource?.titleText == nil && configuration?.apparances.titleText == nil) ? true : false
+        lbl_body.isHidden = (dataSource?.bodyText == nil && configuration?.apparances.bodyText == nil) ? true : false
+        btn_primary.isHidden = (dataSource?.buttonPrimaryText == nil && configuration?.apparances.buttonPrimaryText == nil) ? true : false
+        btn_secondary.isHidden = (dataSource?.buttonSecondaryText == nil && configuration?.apparances.buttonSecondaryText == nil) ? true : false
     }
     
     public func show(on controller: UIViewController?) {
@@ -206,5 +250,12 @@ final public class LeoPopScreen: UIViewController {
     
     @objc private func actionSecondary(_ sender: UIButton) {
         delegate?.didTapSecondaryButton(view: self)
+    }
+}
+
+
+extension UIImage {
+    convenience init?(identifierName: Identifier.ImageName) {
+        self.init(named: identifierName.rawValue)
     }
 }
