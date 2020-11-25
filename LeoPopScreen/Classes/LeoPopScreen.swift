@@ -10,6 +10,7 @@ import UIKit
 public protocol LeoPopScreenDelegate: class {
     func didTapPrimaryButton(view: LeoPopScreen)
     func didTapSecondaryButton(view: LeoPopScreen)
+    func didCancel(view: LeoPopScreen)
 }
 
 public protocol LeoPopScreenDataSource: class {
@@ -28,6 +29,10 @@ public protocol LeoPopScreenDataSource: class {
     var buttonSecondaryText: String? { get }
     var buttonIsRounded: Bool { get }
     var presentationStyle: UIModalPresentationStyle { get }
+    var showButtonCancelAtNavBar: Bool { get }
+    var navBarTitle: Any? { get }
+    var navBarBackgroundColor: UIColor { get }
+    var navBarForegroundColor: UIColor { get }
 }
 
 public extension LeoPopScreenDataSource {
@@ -65,6 +70,22 @@ public extension LeoPopScreenDataSource {
     
     var buttonIsRounded: Bool {
         return true
+    }
+    
+    var showButtonCancelAtNavBar: Bool {
+        return false
+    }
+    
+    var navBarTitle: Any? {
+        return nil
+    }
+    
+    var navBarBackgroundColor: UIColor {
+        return UIColor.darkGray
+    }
+    
+    var navBarForegroundColor: UIColor {
+        return UIColor.white
     }
 }
 
@@ -228,6 +249,9 @@ final public class LeoPopScreen: UIViewController {
             btn_secondary.setTitle(config.apparances.buttonSecondaryText, for: .normal)
         }
         hideViewIfNeeded()
+        if dataSource?.showButtonCancelAtNavBar ?? false {
+            addCancelAtNavigationBar()
+        }
     }
     
     private func hideViewIfNeeded() {
@@ -238,10 +262,36 @@ final public class LeoPopScreen: UIViewController {
         btn_secondary.isHidden = (dataSource?.buttonSecondaryText == nil && configuration?.apparances.buttonSecondaryText == nil) ? true : false
     }
     
+    private func addCancelAtNavigationBar() {
+        if let titleText = dataSource?.navBarTitle as? String {
+            navigationItem.title = titleText
+        } else if let titleView = dataSource?.navBarTitle as? UIView {
+            navigationItem.titleView = titleView
+        }
+        
+        navigationController?.navigationBar.isHidden = !(dataSource?.showButtonCancelAtNavBar ?? true)
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : dataSource?.navBarForegroundColor ?? UIColor.white]
+        navigationController?.navigationBar.tintColor = dataSource?.navBarForegroundColor
+        navigationController?.navigationBar.barTintColor = dataSource?.navBarBackgroundColor
+        navigationController?.navigationBar.isTranslucent = false
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "cancel", style: .plain, target: self, action: #selector(actionCancel(_:)))
+    }
+    
     public func show(on controller: UIViewController?) {
         guard let vc = controller else { return }
         self.modalPresentationStyle = dataSource?.presentationStyle ?? .currentContext
-        vc.present(self, animated: true, completion: nil)
+        if dataSource?.showButtonCancelAtNavBar ?? false {
+            let nav = UINavigationController(rootViewController: self)
+            vc.present(nav, animated: true, completion: nil)
+        } else {
+            vc.present(self, animated: true, completion: nil)
+        }
+    }
+    
+    @objc private func actionCancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true) {
+            self.delegate?.didCancel(view: self)
+        }
     }
     
     @objc private func actionPrimary(_ sender: UIButton) {

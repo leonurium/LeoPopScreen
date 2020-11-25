@@ -44,7 +44,7 @@
 		607FACE51AFB9204008FA782 /* LeoPopScreen_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeoPopScreen_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		71122F8F48BFC54BB7B6EDE0 /* LeoPopScreen.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LeoPopScreen.podspec; path = ../LeoPopScreen.podspec; sourceTree = "<group>"; };
+		71122F8F48BFC54BB7B6EDE0 /* LeoPopScreen.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LeoPopScreen.podspec; path = ../LeoPopScreen.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2E8D9AB16A18A1736C64362 /* Pods-LeoPopScreen_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeoPopScreen_Tests.release.xcconfig"; path = "Target Support Files/Pods-LeoPopScreen_Tests/Pods-LeoPopScreen_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B9AC959F99C9BD6BDF6DF014 /* Pods_LeoPopScreen_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeoPopScreen_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */

@@ -36,6 +36,10 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: LeoPopScreenDelegate {
+    func didCancel(view: LeoPopScreen) {
+        print("Cancel")
+    }
+    
     func didTapPrimaryButton(view: LeoPopScreen) {
         view.dismiss(animated: true, completion: nil)
     }
@@ -46,6 +50,14 @@ extension ViewController: LeoPopScreenDelegate {
 }
 
 extension ViewController: LeoPopScreenDataSource {
+    var buttonPrimaryText: String? {
+        return nil
+    }
+    
+    var buttonSecondaryText: String? {
+        return nil
+    }
+    
     var image: UIImage? {
         return UIImage(named: "image_update")
     }
@@ -56,14 +68,6 @@ extension ViewController: LeoPopScreenDataSource {
     
     var bodyText: String? {
         return nil
-    }
-    
-    var buttonPrimaryText: String? {
-        return "Button Primary Text"
-    }
-    
-    var buttonSecondaryText: String? {
-        return "Button Secondary Text"
     }
     
     var presentationStyle: UIModalPresentationStyle {

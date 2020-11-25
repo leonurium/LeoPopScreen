@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LeoPopScreen'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'LeoPopScreen is an easy way to show pop up on the screens with awesome customization'
 
 # This description is used to generate tags and improve search results.
